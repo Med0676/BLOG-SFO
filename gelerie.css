@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Raleway;
+    background-color: #202125;
+  }
+  
+  .heading {
+      text-align: center;
+      font-size: 2.0em;
+      letter-spacing: 1px;
+      padding: 40px;
+      color: white;
+  }
+  
+  .gallery-image {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .gallery-image img {
+    height: 250px;
+    width: 350px;
+    transform: scale(1.0);
+    transition: transform 0.4s ease;
+  }
+  
+  .img-box {
+    box-sizing: content-box;
+    margin: 10px;
+    height: 250px;
+    width: 350px;
+    overflow: hidden;
+    display: inline-block;
+    color: white;
+    position: relative;
+    background-color: white;
+  }
+  
+  .caption {
+    position: absolute;
+    bottom: 5px;
+    left: 20px;
+    opacity: 0.0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .transparent-box {
+    height: 250px;
+    width: 350px;
+    background-color:rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: background-color 0.3s ease;
+  }
+  
+  .img-box:hover img { 
+    transform: scale(1.1);
+  }
+  
+  .img-box:hover .transparent-box {
+    background-color:rgba(0, 0, 0, 0.5);
+  }
+  
+  .img-box:hover .caption {
+    transform: translateY(-20px);
+    opacity: 1.0;
+  }
+  
+  .img-box:hover {
+    cursor: pointer;
+  }
+  
+  .caption > p:nth-child(2) {
+    font-size: 0.8em;
+  }
+  
+  .opacity-low {
+    opacity: 0.5;
+  }
+
+
+
+
+
+  nav {
+    z-index: 10;
+    height: 25px;
+    width: 10%;
+    left: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.851);
+    position: absolute;
+    top: 10px;
+    padding: 25px 35px;
+    font-family: "Poppins", sans-serif;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+  }
+  
+  a {
+    font-size: 20px;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 10px 26px 10px 26px;
+    display: inline-block;
+    text-decoration: none;
+  }
+  
+  a:hover,
+  a:focus {
+    color: rgb(192, 25, 25);
+    outline: none;
+  }
+  
+  /* Responsive styles for navbar */
+  @media screen and (max-width: 768px) {
+    nav {
+      box-shadow: none;
+      background-color: transparent;
+      width: 80%;
+      left: 10%;
+      padding: 10px 15px;
+      border-radius: 10px;
+      top: 20%;
+      height: auto;
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: column;
+    }
+  
+    a {
+      background-color: white;
+      font-size: 14px;
+      padding: 6px 12px;
+      margin-bottom: 5px;
+    }
+  }
