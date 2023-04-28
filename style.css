@@ -97,7 +97,7 @@ nav {
 
 a {
   font-size: 20px;
-  color:rgb(82, 14, 14); 
+  color:rgb(255, 255, 255); 
   font-family: 'Times New Roman', Times, serif;
   padding: 10px 26px;
   display: inline-block;
@@ -106,12 +106,18 @@ a {
 
 @media only screen and (max-width: 768px) {
   nav {
+    box-shadow: none;
+    background-color: transparent;
+    width: 80%;
+    left: 29%;
+    padding: 10px 15px;
+    border-radius: 10px;
+    top: 20%;
+    height: auto;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
     position: absolute;
-    margin-top: 15px;
-    width: 50%;
-    left: 60%;
-    transform: translateX(-50%);
-    padding: 10px 60px;
   }
   
   a {
