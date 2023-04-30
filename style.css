@@ -69,7 +69,7 @@ img {
     width: 50%;
     max-width: 100px;
     top: 2px;
-    left: 10%;
+    left: 12%;
     transform: translateX(-50%);
   }
 }
@@ -97,7 +97,7 @@ nav {
 
 a {
   font-size: 20px;
-  color:rgb(87, 24, 24); 
+  color:#9cd1a6; 
   font-family: 'Times New Roman', Times, serif;
   padding: 10px 26px;
   display: inline-block;
